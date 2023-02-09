@@ -1,0 +1,34 @@
+@use 'config/reset';
+@use 'seções/header';
+@use 'config/cores';
+@use 'seções/produtos';
+@use 'config/variaveis';
+
+body {
+    background-color: cores.$corDeFundo;
+
+    li {
+        list-style: none;
+    }
+
+    .container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: flex;
+    
+        li {
+            font-weight: bold;
+            margin-left: 24px;
+        }
+    
+        a {
+            color: cores.$corTexto;
+            text-decoration: none;
+        }
+    }
+}
+
